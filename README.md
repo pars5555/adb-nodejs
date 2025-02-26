@@ -38,13 +38,14 @@ To install the pre-packaged runtime, follow these steps:
 After extracting the Node.js runtime on your Android device, you can install npm modules just like you would on a regular machine. To install a module, run:
 
 ```bash
-adb shell "export OPENSSL_CONF=/data/local/tmp/node_runtime/usr/etc/tls/openssl.cnf && export LD_LIBRARY_PATH=/data/local/tmp/node_runtime/usr/lib:$LD_LIBRARY_PATH && /data/local/tmp/node_runtime/usr/bin/npm install <module_name> --unsafe-perm"
+adb shell "export OPENSSL_CONF=/data/local/tmp/node_runtime/usr/etc/tls/openssl.cnf && export LD_LIBRARY_PATH=/data/local/tmp/node_runtime/usr/lib:$LD_LIBRARY_PATH && /data/local/tmp/node_runtime/usr/bin/npm install -g <module_name>"
 ```
 
 For example, to install the `molecular` package:
 
 ```bash
-adb shell "export OPENSSL_CONF=/data/local/tmp/node_runtime/usr/etc/tls/openssl.cnf && export LD_LIBRARY_PATH=/data/local/tmp/node_runtime/usr/lib:$LD_LIBRARY_PATH && /data/local/tmp/node_runtime/usr/bin/npm install molecular --unsafe-perm"
+adb shell "export OPENSSL_CONF=/data/local/tmp/node_runtime/usr/etc/tls/openssl.cnf && export LD_LIBRARY_PATH=/data/local/tmp/node_runtime/usr/lib:$LD_LIBRARY_PATH && /data/local/tmp/node_runtime/usr/bin/npm install -g molecular"
+
 ```
 
 ### 3. Using Absolute Paths for Modules
