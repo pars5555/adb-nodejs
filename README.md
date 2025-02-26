@@ -2,7 +2,8 @@
 # adb-nodejs
 
 This repository contains a set of tools and resources to run Node.js and npm packages on an Android device using ADB. It includes a pre-packaged Node.js runtime for Android and a script to install and test npm modules.
-
+- node v23.6.1
+- npm  v10.9.2
 ## Prerequisites
 
 - Android device with ADB access
